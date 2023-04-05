@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+:root{
+    --colorUno: #fff;
+    --colorDOS: #313131;
+    --colorHover: #fced68;
+    --colorHoverMenu: #8a2020;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+.cab_fir{
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+}
+.navbar{
+    height: 7.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(255, 255, 255, .05);
+    transition: 0.25s;
+}
+.logo_ca{
+    text-decoration: none;
+    font-size: 3rem;
+    color: var(--colorDOS);
+    font-weight: 800;
+}
+.logo_ca img{
+    width: 4rem;
+    vertical-align: text-top;
+}
+.menu_ul{
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.link_menu{
+    text-decoration: none;
+    color: var(--colorDOS);
+    transition: color .25s;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    transition: .5s;
+}
+.link_menu:hover{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--colorHoverMenu);
+}
+
+.boton_pe{
+    text-decoration: none;
+    display: inline-block;
+    background-color: transparent;
+    border: solid var(--colorHover);
+    font-size: 1.5rem;
+    color: var(--colorDOS);
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    transition: background-color 0.25s;
+}
+.boton_pe:hover{
+    background-color: #fff38c;
+    border: solid var(--colorHoverMenu);
+    color: var(--colorDOS);
+}
+
+header.active{
+    background-color: #8a2020;
+    box-shadow: 0 3px 1rem rgba(0,0,0,0.1);
+}
+header.active .navbar{
+    height: 6rem;
+}
+header.active .logo_ca, header.active .link_menu{
+    color: var(--colorUno);
+}
+header.active .boton_pe{
+    color: var(--colorUno);
+}
+header.active .boton_pe:hover{
+    background-color: #fff;
+    border: solid var(--colorHover);
+    color: #8a2020;
+}
+
+/*hsjsssj
+header.active{
+    background-color: #ffffff;
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
+}
+header.active .navbar{
+    height: 6rem;
+}
+header.active .logo_ca, header.active .link_menu{
+    color: #313131;
+}
+header.active .boton_pe{
+    background-color: var(--colorDOS);
+    color: var(--colorUno);
+}*/
+
+
+.banner_sl{
+    height: 150vh;
+    background-image: url(/img/banner.jpg);
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.secc_no{
+    height: 150vh;
+    background-color: antiquewhite;
+}
